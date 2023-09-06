@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Bunker Inc
+        </title>
+        <link rel="stylesheet" type="text/css" href="/static/signup.css">
+    </head>
+<body>
+    <div class="image-container">
+        <img src="/static/images/bunker.jpg">
+    </div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="SignUp()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com">
+                    <img src="/static/images/face.jpg">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="/static/images/insta.jpg">
+                </a>
+                <a href="https://www.github.com">
+                    <img src="/static/images/github.jpg">
+                    </a>
+            </div>
+            <form id="Login" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="SignUp" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="New Password" required>
+                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & Conditions</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <script>
+        var x = document.getElementById("Login");
+        var y = document.getElementById("SignUp");
+        var z = document.getElementById("btn");
+
+        function Login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+        function SignUp(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+       
+    </script>
+
+</body>
+</html>
